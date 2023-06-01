@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    .animation {
+        width: 1000px;
+        height: 8000px;
+    }
+    .animation__content {
+        position: fixed;
+        top: 0;
+    }
+    .animation__character {
+        display: inline-block;
+        margin: 0;
+        width: 50px;
+        position: absolute;
+        top: 175px;
+    }
+    .animation__character img {
+        max-width: 100%;
+    }
+</style>
+<body>
+    <div class="animation">
+        <div class="animation__content">
+            <figure class="animation__character"><img src="/assets/images/animation/run01.png" alt=""></figure>
+            <div class="animation__line">
+                <svg height="8000" width="1000">
+                    <polyline points="0 200,700 200, 700 400, 800 400, 800 8000"
+                    style="fill:none;stroke:black;stroke-width:3" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/animation.js"></script>
+</html>
